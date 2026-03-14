@@ -21,7 +21,6 @@ The closing — the actual selling point:
 <p>"Your time is the only currency that does not refill. Every hour spent on something that does not matter is an hour that does not return. This book will take a few of those hours. What it returns is a way of seeing that will save you many more — in purchases you won't make, in waiting you will choose willingly, in the clarity of knowing what is actually needed."</p>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +40,7 @@ The closing — the actual selling point:
     --rule: #d4c9b8;
   }
 
-   { margin:0; padding:0; box-sizing:border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; }
 
   body {
     background: var(--paper);
@@ -52,7 +51,7 @@ The closing — the actual selling point:
     line-height: 1.8;
   }
 
-  / ── Cover ── /
+  /* ── Cover ── */
   #cover {
     min-height: 100vh;
     display: flex;
@@ -93,7 +92,7 @@ The closing — the actual selling point:
   }
   @keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:1} }
 
-  / ── Nav / TOC ── /
+  /* ── Nav / TOC ── */
   nav {
     position: sticky; top:0; z-index:99;
     background: var(--ink); color:var(--paper);
@@ -108,7 +107,7 @@ The closing — the actual selling point:
   }
   nav a:hover { color:var(--gold); background:rgba(255,255,255,.05); }
 
-  / ── Chapter layout ── /
+  /* ── Chapter layout ── */
   .chapter {
     max-width: 780px;
     margin: 0 auto;
@@ -132,7 +131,7 @@ The closing — the actual selling point:
   }
   p { margin-bottom:1.2rem; }
 
-  / ── Pull-quote ── /
+  /* ── Pull-quote ── */
   blockquote {
     border-left:3px solid var(--gold);
     padding:.6rem 1.4rem;
@@ -144,7 +143,7 @@ The closing — the actual selling point:
     background:rgba(200,134,10,.05);
   }
 
-  / ── Cards ── /
+  /* ── Cards ── */
   .cards {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
@@ -164,7 +163,7 @@ The closing — the actual selling point:
   .card strong { font-size:1rem; font-weight:600; display:block; margin-bottom:.4rem; }
   .card p { font-size:.88rem; line-height:1.55; margin:0; color:#4a3f30; }
 
-  / ── Story card ── /
+  /* ── Story card ── */
   .story {
     background:#fff;
     border:1px solid var(--rule);
@@ -187,7 +186,7 @@ The closing — the actual selling point:
   .story p { font-size:.93rem; line-height:1.65; color:#3a3020; }
   .story .stars { color:var(--gold); font-size:.85rem; margin-top:.6rem; }
 
-  / ── Equation / highlight box ── /
+  /* ── Equation / highlight box ── */
   .box {
     background: var(--ink); color:var(--paper);
     padding:1.4rem 1.6rem; border-radius:3px;
@@ -198,11 +197,11 @@ The closing — the actual selling point:
   }
   .box span { color:var(--gold); }
 
-  / ── Two-col ── /
+  /* ── Two-col ── */
   .two { display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin:1.5rem 0; }
   @media(max-width:580px){ .two{ grid-template-columns:1fr; } }
 
-  / ── River / Forest section ── /
+  /* ── River / Forest section ── */
   #rivers {
     background: linear-gradient(135deg, #0d2b1e 0%, #0c2535 100%);
     color:#e8f0ea; padding:5rem 1.8rem;
@@ -215,7 +214,7 @@ The closing — the actual selling point:
   #rivers .card p { color:#c0d4c8; }
   #rivers p { color:#cdddd0; }
 
-  / ── Vision section ── /
+  /* ── Vision section ── */
   #vision {
     background: #fff8ee;
     padding:5rem 1.8rem 6rem;
@@ -232,7 +231,7 @@ The closing — the actual selling point:
   .stat-label { font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
   .stats-row { display:flex; flex-wrap:wrap; justify-content:center; gap:3rem; margin:2.5rem 0; }
 
-  / ── Footer ── /
+  /* ── Footer ── */
   footer {
     background:var(--ink); color:#7a6e60;
     text-align:center; padding:2rem 1rem;
@@ -347,20 +346,55 @@ The closing — the actual selling point:
   <div style="background:#1a1208; color:#f0e8d8; padding:1.2rem 1.6rem; border-radius:3px; margin:1.5rem 0; text-align:center;">
     <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1rem; color:#c8860a; margin-bottom:.4rem;">The book is what it argues for.</p>
     <p style="font-size:.85rem; color:#8a7e70; margin:0; line-height:1.6;">It was made to specification — not speculatively. It addresses a confirmed need — not a manufactured desire. It will be read by the people who need it most — if they can find it. That is the only remaining question. And finding things that are genuinely needed is exactly what this book proposes to solve.</p>
+  </div>
 
-<p>Hence, this book is free as well. If you feel the value, you can pay as you like or as you get benefited or not needed as well. As you feel right and perfect - how your inner compass guides you!! Be happy!! </p>
+</div>
+</section>
 
-<img
-  src="https://raw.githubusercontent.com/krishnabhearth-svg/Kraizen-Journal/main/upi%20pay%20qr%20code.jpeg"
-  alt="UPI Payment QR Code"
-  style="max-width: 280px; width: 100%;"
-/>
-<p>Scan this QR to pay via UPI</p>
+<!-- ═══════════════════ AMAZON SELLING PAGE ═══════════════════ -->
+<section id="amz-selling" style="background:#1a1208; color:#e8e0d4; padding:3.5rem 1.8rem; border-bottom:4px solid #c8860a;">
+<div style="max-width:680px; margin:0 auto;">
+
+  <p style="font-size:.68rem; letter-spacing:.28em; text-transform:uppercase; color:#c8860a; margin-bottom:.8rem; font-family:'Source Sans 3',sans-serif;">Amazon Product Description · ~4,000 Characters · Free Access Also Available</p>
+
+  <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.4rem,3.5vw,2rem); color:#f0e8d8; line-height:1.3; margin-bottom:.6rem;">How Much Time Will You Give This?</h2>
+  <p style="font-size:.88rem; color:#8a7e70; font-style:italic; margin-bottom:1.8rem; font-family:'Source Sans 3',sans-serif;">That is the only selling point that matters. Not the price. The time.</p>
+
+  <div style="background:rgba(200,134,10,.1); border:1px solid rgba(200,134,10,.3); border-radius:3px; padding:1.2rem 1.6rem; margin-bottom:1.8rem; text-align:center;">
+    <p style="font-size:.78rem; color:#c8860a; letter-spacing:.12em; text-transform:uppercase; margin-bottom:.4rem; font-family:'Source Sans 3',sans-serif;">This book is free to read online</p>
+    <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.1rem; color:#f0e8d8; margin-bottom:.5rem;">
+      <a href="https://krishnabhearth-svg.github.io/ammason/" style="color:#c8860a; text-decoration:none;" target="_blank">krishnabhearth-svg.github.io/ammason</a>
+    </p>
+    <p style="font-size:.82rem; color:#8a7e70; line-height:1.6; margin-bottom:.6rem; font-family:'Source Sans 3',sans-serif;">Read every chapter, every story, every Sanskrit wall slogan — free, on any device, anywhere on earth.</p>
+    <p style="font-size:.9rem; color:#c8860a; font-style:italic; font-family:'Playfair Display',serif; margin:0;">Pay what you can, what you feel it is worth, or nothing at all.<br>As your inner compass guides you. Be happy.</p>
+  </div>
+
+  <div style="font-size:.97rem; line-height:1.9; color:#cdddd0; font-family:'Source Sans 3',sans-serif;">
+
+    <p>You will spend more money today than you have time to account for. A subscription renewed without thinking. A product delivered because the algorithm knew you were tired. An app that consumed forty minutes you did not notice leaving. Money moves fast. Time moves quietly. And the thing the modern economy has never told you — because telling you would be bad for the quarterly numbers — is that <strong style="color:#e8e0d4;">your time is worth more than your money. Far more. And the system you live inside is built to consume it without asking permission.</strong></p>
+
+    <p>This book does not ask for your money first. Read it free at the link above. If it changes how you see buying, making, selling, and the planet — pay what it was worth. If it does not reach you, pay nothing at all. The book practises what it argues for: made for the person who needs it, available without the barrier of price between the idea and the person it was written for.</p>
+
+    <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.02rem; color:#c8860a; border-left:3px solid #c8860a; padding:.5rem 1.2rem; margin:1.5rem 0; background:rgba(200,134,10,.07);">Why do we sell more — and focus less on whether what we sold was needed? Why do we collect data about every human being on earth and use almost none of it to understand what would make them healthier? Why is it easier to buy thirty things than to find one right one? These are not complicated questions. They simply have never been profitable to answer.</p>
+
+    <p>The <strong style="color:#e8e0d4;">Amma Square Zen Principle</strong> is built on one reversal: <em>make nothing before it is needed, waste nothing that was made, give back everything that was saved.</em> What sounds like philosophy is a complete redesign of how commerce, manufacturing, food, healthcare, education, AI, and ecological restoration could work — if the people running these systems asked different questions than the ones that currently generate their revenue.</p>
+
+    <p>Inside: the case that every precise purchase is an act of planetary restoration. The argument that no product should be manufactured until a real human being has asked for it. A global product library where you borrow what you need briefly and own only what you use daily. The design of a universal community kitchen — free khichdi and herb soup for every human being on earth, in a thousand varieties, costing less than the world spends on advertising in four days — with the Sanskrit slogans carved on its walls forever. What 30 years of global data collection was used for, and the question it never asked. The honest case for selling held alongside the honest case against it. And the question: when neither a child nor the adult beside them knows where a river comes from — whose responsibility is that, and when does it become an emergency?</p>
+
+    <p>This book does not say commerce is evil. Some of the greatest human achievements happened because someone wanted to sell something well. The question it asks is simpler and harder: <em>sell toward what? Grow toward what? Collect data to understand what?</em></p>
+
+    <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.02rem; color:#c8860a; margin-top:1.5rem;">Your time is the only currency that does not refill. Every hour spent on something that does not matter is an hour that does not return. This book will take a few of those hours. What it returns is a way of seeing that will save you many more — in purchases you will not make, in waiting you will choose willingly, in the clarity of knowing what is actually needed. Read it free. Pay what it was worth. Or buy it on Amazon. All three are correct. Your compass, your call.</p>
+
+    <p style="font-size:.82rem; color:#7a6e60; margin-top:1.5rem; border-top:1px solid #3a2e20; padding-top:1rem; font-family:'Source Sans 3',sans-serif;">
+      <strong style="color:#c8860a;">Free:</strong> <a href="https://krishnabhearth-svg.github.io/ammason/" style="color:#7bc8a4; text-decoration:none;" target="_blank">krishnabhearth-svg.github.io/ammason</a> &nbsp;·&nbsp; Pay what you feel &nbsp;·&nbsp; Or buy on Amazon<br>
+      Amma Square Zen Principle · Commerce · Ecology · Manufacturing · AI · Philosophy of Enough
+    </p>
 
   </div>
 
 </div>
 </section>
+
 
 <!-- ═══════════════════ PREFACE ═══════════════════ -->
 <section id="preface" style="background:#f9f4ec; padding:5rem 1.8rem 4rem;">
@@ -477,6 +511,7 @@ The closing — the actual selling point:
 <!-- ═══════════════════ NAV ═══════════════════ -->
 <nav>
   <a href="#amz-readiness">Amazon Readiness</a>
+  <a href="#amz-selling">Why Read This</a>
   <a href="#preface">Preface</a>
   <a href="#ch1">Buying Principle</a>
   <a href="#ch2">AI Search</a>
@@ -3120,3 +3155,4 @@ The closing — the actual selling point:
 
 </body>
 </html>
+
